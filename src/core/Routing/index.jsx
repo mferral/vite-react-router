@@ -4,6 +4,7 @@ import {
     Route,
 } from 'react-router-dom'
 import ProtectedRoute from './ProtectedRoute'
+import NotFound from '../../pages/404'
 const Routing = (props) => {    
     const { routes } = props
 
@@ -18,6 +19,7 @@ const Routing = (props) => {
         <Router>
             <Routes>                
                 {routeComponents}
+                <Route path='*' element={<NotFound />} />
             </Routes>
         </Router>
     )

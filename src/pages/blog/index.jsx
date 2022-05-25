@@ -2,7 +2,7 @@ function Blog() {
     return (
     <div>
         <h1>
-            Index!
+            Blog!
         </h1>        
     </div>
     )

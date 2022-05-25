@@ -8,7 +8,7 @@ import NotFound from '../../pages/404'
 const Routing = (props) => {    
     const { routes } = props
 
-    const routeComponents = routes.map(({auth, component: Component, layout: Layout, ...rest}, index) => {    
+    const routeComponents = routes.map(({auth, component: Component, layout: Layout, ...rest}, index) => {            
         if(Layout){            
             return (
                 <Route {...rest}  element={<ProtectedRoute auth={auth}><Layout><Component /></Layout></ProtectedRoute>} key={index}/>

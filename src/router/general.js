@@ -9,6 +9,7 @@ export default [
         path:"/",
         component:Index,
         auth:false, 
+        layout: AdminLayout
     }, 
     {   
         path:"/login",
@@ -18,7 +19,7 @@ export default [
     {   
         path:"/blog",
         component:Blog,
-        auth:true,
+        auth:false,
         layout: AdminLayout
     },
     {   
